@@ -2,6 +2,9 @@
 
 use prodaja_postavka
 
+/*Р’ РѕСЃРЅРѕРІРЅРѕРј Р·РґРµСЃСЊ РїСЂРµРґСЃС‚Р°РІР»РµРЅРѕ СЃРѕР·РґР°РЅРёРµ Р±Р°Р·С‹ РґР°РЅРЅС‹С… 
+РЇ РЅРµ СѓСЃРїРµР» РµРµ Р·Р°РїРѕР»РЅРёС‚СЊ*/
+
 --create table tip_zakaza(
 --id_tip_zakaza int identity(1,1) not null primary key,
 --tip_zakaza nvarchar(150) not null
@@ -169,6 +172,6 @@ foreign key (id_vid_oplaty)references vid_oplaty(id_vid_oplaty)
 
 select * from postavki where ata_postavki '2011/02/25' and '2011/02/27';
 select * from postavki where id_postavshik = 1;
-select * from tovar t, tip_tovara tt where t.id_tip_postavki = tt.id_tip_postavki and tt.tip_postavki = 'дополниетльная';
+select * from tovar t, tip_tovara tt where t.id_tip_postavki = tt.id_tip_postavki and tt.tip_postavki = 'Г¤Г®ГЇГ®Г«Г­ГЁГҐГІГ«ГјГ­Г Гї';
 
-/*в основном здесь скрипт создания базы и селекты. Полностью не успел*/
+/*Гў Г®Г±Г­Г®ГўГ­Г®Г¬ Г§Г¤ГҐГ±Гј Г±ГЄГ°ГЁГЇГІ Г±Г®Г§Г¤Г Г­ГЁГї ГЎГ Г§Г» ГЁ Г±ГҐГ«ГҐГЄГІГ». ГЏГ®Г«Г­Г®Г±ГІГјГѕ Г­ГҐ ГіГ±ГЇГҐГ«*/
