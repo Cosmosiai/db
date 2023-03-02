@@ -1,10 +1,12 @@
 --create database student;
 
-/* создали базу данных student, далее используем их */
+/* Г±Г®Г§Г¤Г Г«ГЁ ГЎГ Г§Гі Г¤Г Г­Г­Г»Гµ student, Г¤Г Г«ГҐГҐ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬ ГЁГµ */
+
+/*Р—РґРµСЃСЊ РµСЃС‚СЊ СЃРѕР·РЅР°РЅРёРµ Р±Р°Р·С‹ РґР°РЅРЅС‹С…, РµРіРѕ Р·Р°РїРѕР»РЅРµРЅРёРµ, С‚Р°Р±Р»РёС†Р° РѕР±Р·РѕСЂР° С‚Р°Р±Р»РёС† Рё РІС‹Р±РѕСЂРєР° РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј*/
 
 use student
 
-/* создаём все таблицы */
+/* Г±Г®Г§Г¤Г ВёГ¬ ГўГ±ГҐ ГІГ ГЎГ«ГЁГ¶Г» */
 
 --create table fakultet(
 --id_fakultet int identity(1,1) not null primary key,
@@ -141,7 +143,7 @@ use student
 --foreign key (id_student)references student(id_student)
 --);
 
-/* таблица таблиц*/
+/* ГІГ ГЎГ«ГЁГ¶Г  ГІГ ГЎГ«ГЁГ¶*/
 
 --CREATE TABLE #TempTable1
 --    (
@@ -161,58 +163,58 @@ use student
 --        ObjName 
 --DROP TABLE #TempTable1;
 
-/* добавляем записи*/
+/* Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ Г§Г ГЇГЁГ±ГЁ*/
 
---insert into natsionalnost( natsionalnost) values ('кыргыз');
---insert into natsionalnost( natsionalnost) values ('Казах');
---insert into natsionalnost( natsionalnost) values ('Узбек');
---insert into natsionalnost( natsionalnost) values ('Таджик');
---insert into natsionalnost( natsionalnost) values ('Русский');
+--insert into natsionalnost( natsionalnost) values ('ГЄГ»Г°ГЈГ»Г§');
+--insert into natsionalnost( natsionalnost) values ('ГЉГ Г§Г Гµ');
+--insert into natsionalnost( natsionalnost) values ('Г“Г§ГЎГҐГЄ');
+--insert into natsionalnost( natsionalnost) values ('Г’Г Г¤Г¦ГЁГЄ');
+--insert into natsionalnost( natsionalnost) values ('ГђГіГ±Г±ГЄГЁГ©');
 
---insert into pol( pol) values ('мужчина');
---insert into pol( pol) values ('женский');
---insert into pol( pol) values ('трансвистит');
---insert into pol( pol) values ('другой');
+--insert into pol( pol) values ('Г¬ГіГ¦Г·ГЁГ­Г ');
+--insert into pol( pol) values ('Г¦ГҐГ­Г±ГЄГЁГ©');
+--insert into pol( pol) values ('ГІГ°Г Г­Г±ГўГЁГ±ГІГЁГІ');
+--insert into pol( pol) values ('Г¤Г°ГіГЈГ®Г©');
 
 
---insert into tip_nas_punkt( tip_nas_punkt) values ('Село');
---insert into tip_nas_punkt( tip_nas_punkt) values ('Город');
+--insert into tip_nas_punkt( tip_nas_punkt) values ('Г‘ГҐГ«Г®');
+--insert into tip_nas_punkt( tip_nas_punkt) values ('ГѓГ®Г°Г®Г¤');
 
---insert into oblast( oblast) values ('Бишкек');
---insert into oblast( oblast) values ('Ош');
---insert into oblast( oblast) values ('Баткенская обл.');
---insert into oblast( oblast) values ('Джал-Абадская обл.');
---insert into oblast( oblast) values ('Нарынская обл.');
---insert into oblast( oblast) values ('Ошская обл');
---insert into oblast( oblast) values ('Таласская обл.');
---insert into oblast( oblast) values ('Чуйская обл.');
---insert into oblast( oblast) values ('Ысык-Кульская обл.');
+--insert into oblast( oblast) values ('ГЃГЁГёГЄГҐГЄ');
+--insert into oblast( oblast) values ('ГЋГё');
+--insert into oblast( oblast) values ('ГЃГ ГІГЄГҐГ­Г±ГЄГ Гї Г®ГЎГ«.');
+--insert into oblast( oblast) values ('Г„Г¦Г Г«-ГЂГЎГ Г¤Г±ГЄГ Гї Г®ГЎГ«.');
+--insert into oblast( oblast) values ('ГЌГ Г°Г»Г­Г±ГЄГ Гї Г®ГЎГ«.');
+--insert into oblast( oblast) values ('ГЋГёГ±ГЄГ Гї Г®ГЎГ«');
+--insert into oblast( oblast) values ('Г’Г Г«Г Г±Г±ГЄГ Гї Г®ГЎГ«.');
+--insert into oblast( oblast) values ('Г—ГіГ©Г±ГЄГ Гї Г®ГЎГ«.');
+--insert into oblast( oblast) values ('Г›Г±Г»ГЄ-ГЉГіГ«ГјГ±ГЄГ Гї Г®ГЎГ«.');
 
---insert into rayon( rayon, id_oblast) values ('Первомайский',1);
---insert into rayon( rayon, id_oblast) values ('Свердловский',1);
---insert into rayon( rayon, id_oblast) values ('Ленинский',1);
---insert into rayon( rayon, id_oblast) values ('Октябрьский',1);
+--insert into rayon( rayon, id_oblast) values ('ГЏГҐГ°ГўГ®Г¬Г Г©Г±ГЄГЁГ©',1);
+--insert into rayon( rayon, id_oblast) values ('Г‘ГўГҐГ°Г¤Г«Г®ГўГ±ГЄГЁГ©',1);
+--insert into rayon( rayon, id_oblast) values ('Г‹ГҐГ­ГЁГ­Г±ГЄГЁГ©',1);
+--insert into rayon( rayon, id_oblast) values ('ГЋГЄГІГїГЎГ°ГјГ±ГЄГЁГ©',1);
 
---insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('Ак Орго',1,3);
---insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('Южные Ворота',1,1);
---insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('Золотой квадрат',1,2);
---insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('ТЭЦ',1,4);
+--insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('ГЂГЄ ГЋГ°ГЈГ®',1,3);
+--insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('ГћГ¦Г­Г»ГҐ Г‚Г®Г°Г®ГІГ ',1,1);
+--insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('Г‡Г®Г«Г®ГІГ®Г© ГЄГўГ Г¤Г°Г ГІ',1,2);
+--insert into nas_punkt( nas_punkt, id_tip_nas_punkt, id_rayon) values ('Г’ГќГ–',1,4);
 
 --insert into student( fam, imya, otch, passport, [password], red_date, gruppa, nas_punkt, natsionalnost, pol, grajdanstvo, comments, foto) values (
 
 --insert into tip_kont( tip_kont) values ('Telegram');
 --insert into tip_kont( tip_kont) values ('email');
---insert into tip_kont( tip_kont) values ('номер');
+--insert into tip_kont( tip_kont) values ('Г­Г®Г¬ГҐГ°');
 
 --insert into kontakty( tip_kont, student) values (
 
---insert into sostav( sostav) values ('ВВС');
---insert into sostav( sostav) values ('ВДВ');
---insert into sostav( sostav) values ('пехота');
+--insert into sostav( sostav) values ('Г‚Г‚Г‘');
+--insert into sostav( sostav) values ('Г‚Г„Г‚');
+--insert into sostav( sostav) values ('ГЇГҐГµГ®ГІГ ');
 
---insert into zvanie( zvanie, id_sostav) values ('Рядовой',1);
---insert into zvanie( zvanie, id_sostav) values ('Офицер',2);
---insert into zvanie( zvanie, id_sostav) values ('Лейтенант',3);
+--insert into zvanie( zvanie, id_sostav) values ('ГђГїГ¤Г®ГўГ®Г©',1);
+--insert into zvanie( zvanie, id_sostav) values ('ГЋГґГЁГ¶ГҐГ°',2);
+--insert into zvanie( zvanie, id_sostav) values ('Г‹ГҐГ©ГІГҐГ­Г Г­ГІ',3);
 
 insert into fakultet( fakultet) values ( 'med');
 insert into fakultet( fakultet) values ( 'programs');
@@ -314,7 +316,7 @@ VALUES ('0551555555', 1, 4),
        ('Waarehaldybaeva 52b', 3, 22),
        ('Maldybaeva 53b', 3, 23)
 
-	   /*селектим всё*/
+	   /*Г±ГҐГ«ГҐГЄГІГЁГ¬ ГўГ±Вё*/
 
 --SELECT id_student, fam, imya, fakultet, kafedra, gruppa, pol, natsionalnost, grajdanstvo, oblast, rayon, nas_punkt, tip_nas_punkt
 --FROM student,
